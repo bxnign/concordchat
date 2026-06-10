@@ -185,19 +185,19 @@ concordchat/
 
 ## Estado actual
 
-Fase 0 — en curso.
+**Fase 0 — completada.**
 
-Completado hasta ahora:
+Completado:
 - Estructura de carpetas `src/` y `prisma/` creada.
 - Proyecto Node.js inicializado (`package.json`).
 - Dependencias de producción instaladas: `fastify`, `ws`, `@prisma/client`, `dotenv`.
-- Dependencias de desarrollo instaladas: `typescript`, `tsx`, `@types/node`, `@types/ws`, `prisma`.
-- `.gitignore` actualizado: excluye `node_modules/`, `.env` y `dist/`.
+- Dependencias de desarrollo instaladas: `typescript`, `tsx`, `@types/node`, `@types/ws`, `prisma`, `eslint`, `@eslint/js`, `typescript-eslint`.
+- `.gitignore` configurado: excluye `node_modules/`, `.env` y `dist/`.
 - `tsconfig.json` configurado (target ES2022, CommonJS, strict mode).
-- Scripts de `package.json` definidos: `dev` (tsx watch), `build` (tsc), `start` (node dist/).
+- Scripts de `package.json` definidos: `dev` (tsx watch), `build` (tsc), `start` (node dist/), `lint` (eslint src).
+- ESLint configurado con flat config (`eslint.config.js`), reglas recomendadas de JS + TypeScript.
+- `.env` creado con variables placeholder para servidor, base de datos, WhatsApp Cloud API y Messenger API.
+- `src/server.ts` implementado con Fastify y endpoint `GET /health`.
+- Servidor validado: responde `{"status":"ok"}` en `localhost:3000/health`.
 
-Pendiente en Fase 0:
-- Configurar ESLint.
-- Crear el archivo `.env` con variables placeholder.
-- Implementar `src/server.ts` con endpoint de health check.
-- Validar que el servidor arranca correctamente.
+**Fase 1 — pendiente.**

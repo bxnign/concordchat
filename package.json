@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "lint": "eslint src"
   },
   "repository": {
     "type": "git",
@@ -27,10 +28,13 @@
     "ws": "^8.21.0"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@types/node": "^25.9.2",
     "@types/ws": "^8.18.1",
+    "eslint": "^10.4.1",
     "prisma": "^7.8.0",
     "tsx": "^4.22.4",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.61.0"
   }
 }
