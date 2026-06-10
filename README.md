@@ -200,4 +200,10 @@ Completado:
 - `src/server.ts` implementado con Fastify y endpoint `GET /health`.
 - Servidor validado: responde `{"status":"ok"}` en `localhost:3000/health`.
 
-**Fase 1 — pendiente.**
+**Fase 1 — bloqueada (en espera).**
+
+Bloqueada por verificación de teléfono en el registro de Meta for Developers:
+- El SMS de verificación no llega con ningún operador probado (Mundo, Movistar Chile).
+- El portal `developers.facebook.com` no reconoce la sesión activa de Facebook.
+- Número antiguo vinculado a la cuenta de Facebook ya no está disponible.
+- Acción pendiente: contactar soporte de Meta para resolver el bloqueo de SMS y el acceso a la cuenta.
