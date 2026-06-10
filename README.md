@@ -193,9 +193,11 @@ Completado hasta ahora:
 - Dependencias de producción instaladas: `fastify`, `ws`, `@prisma/client`, `dotenv`.
 - Dependencias de desarrollo instaladas: `typescript`, `tsx`, `@types/node`, `@types/ws`, `prisma`.
 - `.gitignore` actualizado: excluye `node_modules/`, `.env` y `dist/`.
+- `tsconfig.json` configurado (target ES2022, CommonJS, strict mode).
+- Scripts de `package.json` definidos: `dev` (tsx watch), `build` (tsc), `start` (node dist/).
 
 Pendiente en Fase 0:
-- Configurar TypeScript (`tsconfig.json`) y ESLint.
+- Configurar ESLint.
 - Crear el archivo `.env` con variables placeholder.
 - Implementar `src/server.ts` con endpoint de health check.
 - Validar que el servidor arranca correctamente.

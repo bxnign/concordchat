@@ -4,7 +4,9 @@
   "description": "Plataforma de Inbox Unificado de mensajería construida desde cero, controlada al 100% por el usuario. Centraliza los chats de Instagram (Messenger API) y WhatsApp (WhatsApp Cloud API) en una sola interfaz en tiempo real, sin depender de intermediarios no-code ni plataformas de terceros.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
   },
   "repository": {
     "type": "git",
