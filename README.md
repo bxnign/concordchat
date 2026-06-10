@@ -185,4 +185,17 @@ concordchat/
 
 ## Estado actual
 
-Fase 0 — pendiente de inicio.
+Fase 0 — en curso.
+
+Completado hasta ahora:
+- Estructura de carpetas `src/` y `prisma/` creada.
+- Proyecto Node.js inicializado (`package.json`).
+- Dependencias de producción instaladas: `fastify`, `ws`, `@prisma/client`, `dotenv`.
+- Dependencias de desarrollo instaladas: `typescript`, `tsx`, `@types/node`, `@types/ws`, `prisma`.
+- `.gitignore` actualizado: excluye `node_modules/`, `.env` y `dist/`.
+
+Pendiente en Fase 0:
+- Configurar TypeScript (`tsconfig.json`) y ESLint.
+- Crear el archivo `.env` con variables placeholder.
+- Implementar `src/server.ts` con endpoint de health check.
+- Validar que el servidor arranca correctamente.

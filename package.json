@@ -1,0 +1,34 @@
+{
+  "name": "concordchat",
+  "version": "1.0.0",
+  "description": "Plataforma de Inbox Unificado de mensajería construida desde cero, controlada al 100% por el usuario. Centraliza los chats de Instagram (Messenger API) y WhatsApp (WhatsApp Cloud API) en una sola interfaz en tiempo real, sin depender de intermediarios no-code ni plataformas de terceros.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bxnign/concordchat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bxnign/concordchat/issues"
+  },
+  "homepage": "https://github.com/bxnign/concordchat#readme",
+  "dependencies": {
+    "@prisma/client": "^7.8.0",
+    "dotenv": "^17.4.2",
+    "fastify": "^5.8.5",
+    "ws": "^8.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "@types/ws": "^8.18.1",
+    "prisma": "^7.8.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}

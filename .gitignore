@@ -1,2 +1,11 @@
 # Carpeta de trabajo con IA — documentación, sesiones y notas internas
 chat_ia/
+
+# Dependencias de Node.js
+node_modules/
+
+# Variables de entorno — nunca subir tokens ni secrets a git
+.env
+
+# Archivos de compilación de TypeScript
+dist/
