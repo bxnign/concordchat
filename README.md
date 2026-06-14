@@ -200,10 +200,18 @@ Completado:
 - `src/server.ts` implementado con Fastify y endpoint `GET /health`.
 - Servidor validado: responde `{"status":"ok"}` en `localhost:3000/health`.
 
-**Fase 1 — bloqueada (en espera).**
+**Fase 1 — en progreso.**
 
-Bloqueada por verificación de teléfono en el registro de Meta for Developers:
-- El SMS de verificación no llega con ningún operador probado (Mundo, Movistar Chile).
-- El portal `developers.facebook.com` no reconoce la sesión activa de Facebook.
-- Número antiguo vinculado a la cuenta de Facebook ya no está disponible.
-- Acción pendiente: contactar soporte de Meta para resolver el bloqueo de SMS y el acceso a la cuenta.
+Completado:
+- Bloqueo de acceso a Meta for Developers resuelto (soporte de Meta).
+- App `ConcordChat` creada en el portal de Meta for Developers con los tres casos de uso: Messenger from Meta, Instagram y WhatsApp.
+- WhatsApp Cloud API configurada en modo desarrollo: número de prueba `+1 555 644 3143`, Phone Number ID y Business Account ID obtenidos, token de acceso temporal generado.
+- `.env` actualizado con todos los valores reales de WhatsApp Cloud API (`WHATSAPP_PHONE_NUMBER_ID`, `WHATSAPP_BUSINESS_ACCOUNT_ID`, `WHATSAPP_ACCESS_TOKEN`, `WHATSAPP_WEBHOOK_VERIFY_TOKEN`).
+- ngrok instalado (v3.3.1) para exposición del servidor local durante el desarrollo.
+
+Pendiente:
+- Levantar ngrok y registrar la URL pública como endpoint del webhook de WhatsApp en Meta.
+- Suscribir los campos `messages`, `messaging_postbacks`, `message_echoes` en el webhook de WhatsApp.
+- Configurar Messenger API para Instagram: vincular página de Facebook + cuenta de Instagram, permisos y webhook.
+- Generar token de larga duración para WhatsApp (reemplazar el token temporal de 24h).
+- Obtener y almacenar `META_APP_SECRET` en el `.env`.
